@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="form.php">
+        <p>
+            <label for="name">Enter Name : </label>
+            <input type="text" placeholder="Enter your name" required>
+        </p>
+        <p>
+            <label for="dob">DOB : </label>
+            <input type="date" name="dob" required>
+        </p>
+        <p>
+            <label for="gender">Gender : </label>
+            <input type="radio" value="1" name="gender">Male
+            <input type="radio" value="2" name="gender">Female
+            <input type="radio" value="3" name="gender">Other
+        </p>
+        <p>
+            <label for="phone">Enter Mobile Number : </label>
+            <input type="tel" pattern="[0-9]{10}" maxlength="10" name="phone" required>
+        </p>
+        <p>
+            <label for="email">Enter Email : </label>
+            <input type="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="passwords">Password : </label>
+            <input type="password" placeholder="enter your password" required>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
